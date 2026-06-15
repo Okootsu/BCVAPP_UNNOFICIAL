@@ -1,15 +1,22 @@
-# BCVAPP_UNNOFICIAL
+# ✨ BCVAPP_UNNOFICIAL
 
-Aplicación móvil desarrollada con **Expo**, **React Native** y **TypeScript** para consultar información relacionada con las tasas del BCV.
+**BCVAPP_UNNOFICIAL** es una aplicación móvil desarrollada con **Expo**, **React Native** y **TypeScript** para consultar información relacionada con las tasas del BCV de forma rápida, sencilla y moderna.
 
-> **Importante:** este proyecto es solo el **frontend**.  
-> No incluye la API de datos.  
-> El backend utilizado pertenece a este repositorio:  
+> **Importante:** este proyecto contiene únicamente el **frontend**.  
+> La API de datos no está incluida en este repositorio.  
+> El backend correspondiente se encuentra en:  
 > [BCV-Rate-API](https://github.com/Okootsu/BCV-Rate-API)
 
 ---
 
-## Tecnologías utilizadas
+## 📱 Vista general
+
+Este proyecto fue pensado para ofrecer una interfaz ligera y funcional, consumiendo datos desde una API externa separada.  
+La app está estructurada para mantener el código ordenado, escalable y fácil de mantener.
+
+---
+
+## 🛠️ Tecnologías utilizadas
 
 - [Expo](https://expo.dev/)
 - [React Native](https://reactnative.dev/)
@@ -24,18 +31,18 @@ Aplicación móvil desarrollada con **Expo**, **React Native** y **TypeScript** 
 
 ---
 
-## Requisitos previos
+## ✅ Requisitos previos
 
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
 - [Node.js](https://nodejs.org/)
 - npm o yarn
 - [Expo CLI](https://docs.expo.dev/more/expo-cli/)
-- Un emulador Android/iOS o un dispositivo físico con Expo Go
+- Un emulador Android/iOS o un dispositivo físico con **Expo Go**
 
 ---
 
-## Instalación
+## 🚀 Instalación
 
 Clona el repositorio:
 
@@ -57,34 +64,32 @@ npm install
 
 ---
 
-## Configuración de la API
+## 🔌 Configuración de la API
 
-Este proyecto consume datos desde una API externa separada.
+Este proyecto consume datos desde una API externa que se mantiene en un repositorio aparte.
 
-Repositorio de la API:
+### Repositorio del backend:
+[BCV-Rate-API](https://github.com/Okootsu/BCV-Rate-API)
 
-```txt
-https://github.com/Okootsu/BCV-Rate-API
-```
-
-Si tienes una instancia local del backend, configura la URL en tu archivo de servicios, por ejemplo:
+Si estás trabajando en local, puedes configurar la URL del backend en tu archivo de servicios, por ejemplo:
 
 ```js
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "http://localhost:8000",
 });
 
 export default api;
 ```
 
-> Si usas un emulador Android, puede que debas usar `http://10.0.2.2:3000` en lugar de `localhost`.  
-> Si usas un dispositivo físico, usa la IP local de tu PC.
+> **Nota:**  
+> - En un emulador Android, en algunos casos debes usar `http://10.0.2.2:3000` en lugar de `localhost`.
+> - En un dispositivo físico, usa la IP local de tu computadora.
 
 ---
 
-## Ejecución del proyecto
+## ▶️ Ejecución del proyecto
 
 Inicia el proyecto en modo desarrollo:
 
@@ -92,13 +97,13 @@ Inicia el proyecto en modo desarrollo:
 npm start
 ```
 
-O con Expo directamente:
+O usando Expo directamente:
 
 ```bash
 npx expo start
 ```
 
-### Plataformas
+### Plataformas disponibles
 
 Ejecutar en Android:
 
@@ -112,7 +117,15 @@ Ejecutar en iOS:
 npm run ios
 ```
 
-## Estructura del proyecto
+Ejecutar en web:
+
+```bash
+npm run web
+```
+
+---
+
+## 📂 Estructura del proyecto
 
 ```txt
 BCVAPP_UNNOFICIAL/
@@ -131,7 +144,7 @@ BCVAPP_UNNOFICIAL/
 
 ---
 
-## Dependencias principales
+## 📦 Dependencias principales
 
 - `expo`
 - `expo-router`
@@ -144,7 +157,7 @@ BCVAPP_UNNOFICIAL/
 
 ---
 
-## Nota importante
+## 🔎 Nota importante
 
 Este repositorio contiene únicamente la interfaz de usuario y la lógica del frontend.  
 La API y el backend de datos están alojados en un repositorio separado:
@@ -154,6 +167,6 @@ La API y el backend de datos están alojados en un repositorio separado:
 
 ---
 
-## Aclaratoria
+## 📌 Aclaratoria
 
 Este proyecto puede utilizarse con fines personales, educativos o de aprendizaje.  
